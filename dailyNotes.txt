@@ -1,0 +1,809 @@
+Day 2: [Mangsir 18, 2080]
+Homework:
+    Research on relative vs absolute path
+
+Day 3:
+/index.html or index.html is not the right approach
+./ is the right approach to write the pathing also works with react
+./ points to the parent folder
+../points to the parent of the parent
+../../ goes even one level higher and so on
+&nbsp; -> non-breaking space (a space that will not break into a new line)
+ctrl + space for getting suggestion in pathing or '/' or './' as well as in other scenario
+ctrl + click in a hyperlink will open the link in the new tab even if target is not set to '_blank'
+
+
+Day 4:
+    Normally there should only be one h1 in one html page
+    also it is not a good practice to write h3 before h2 for seo related issues
+    changing code means refractoring it
+    ctrl + enter to directly go to the next line
+    alt + shift + down arrow to copy down the selected line of code/text
+    alt + down or up arrow to move line down and up respectively
+    fn + f2 to change the name of the tag directly(opening and closing tag)
+    ctrl + b to close the side bar or open the side bar
+    ctrl + x, end key
+    block element takes space more than required space or a whole line in other words eg: h1, p etc
+    inline element takes only the required space eg: anchor tag, img tag etc
+
+
+    we learnt about list and table today
+
+    homework:
+        make a table given by sagar sir
+        hint: concept that will be used is rowspan and colspan
+
+Day 5:
+    There are three ways you can add css:
+        a. inline css(using style attribute)
+        b. internal css(using style tag)
+        c. external css(using css file and linking with the html file)
+        alt stands for alternative text
+        css debugging is finding out where the css is coming from by going to inspect
+    homework:
+        research margin and padding also complete the given table design
+
+Day 5:
+    types of elements:
+        i.block elements eg: p, heading tags
+        ii. inline elements eg: anchor tag, image element, span
+        iii. inline-block elements
+    semantic tag helps to recognize code without seeing the actual code as they signify the meaning by themselves
+    There are various types of selectors namely: 
+                                    element, id, class, combination of selectors
+    when children is being target using parent for applying css, it is called descendant selectors 
+        it is achieved using by using space betweent two tags 
+                example: header ul li, nav ul etc...
+        Note: we prefer CLASS in css in the place of ID normally...
+        because class is reusable also a single element can have any number of classes or be part of any number of classes
+        kebab-case naming convention: lowercase letters separate by hypen for words
+
+       Note: block element shouldn't be inside inline element
+       use span tag to style the portion of an element
+       homework: 
+                do the design given
+
+Day 6: 
+    windows + v to view and use all the latest copied text on the clipboard
+    ctrl + p to get a search bar for files in vs code
+    css overriding concepts 
+
+Day 7:
+    External css to employ the principle of DRY(Do Not Repeat)
+    External css can be used multiple times as it can be reused simple by linking to the given page
+    if there is a common design across multiple files/pages external css is used
+    and internal css for unique design within the page
+    alt + shift + I for multi-cursor in selected lines and use home and end key to control
+    homework: 
+        find the difference between rem and em 
+        find out why we use box-sizing: border-box;
+        universal selectors
+
+    percentage, rem and em are relative units of measurement...
+    percentage and em are relative to the font-size of the parent element in which font-size is defined
+    while rem is relative to the root font size i.e 16px by default
+    :root selector to select the highest level parent i.e html here you can change the font-size of the root
+    box-sizing: border-box includes padding and border in the specified height and width of the element
+    while the default value of box-sizing is 'content-box' in which the height and width applied is only applicable to the content excluding padding and border
+    short-cuts: ctrl + shift + c to open inspect
+            similarly ctrl + shift + j to close inspect, this same short cut also directly opens console
+
+Day 8:
+    Lorem picsum for pictures
+    mydevice.io for finding device resolution
+    we use vh but not vw instead we use % because vw normally create a horizontal scroll problem
+    ipconfig in terminal to open in mobile brower ip:..../units.html
+    a.active(class) anchor tag in which there is a active class, there is no space. This type of selector is also called and selector
+    color: hex value, rgb value, rgba for opacity too etc
+    tomorrow's topic : git`
+
+Day 9: 
+    dir - to list directories
+    .md - mark down (extension)
+    cd - to change directory
+    cls - to clear
+Day 10: 
+    read more about git and github
+    read about cloning, forking etc
+
+Day 11:
+    flexbox
+    gap property - to create gap between children elements
+    display - flex and grid are used to utilize the space present in parent container
+    There are two axis in flex - namely main-axis and cross-axis
+    justify-content is used to move children in main-axis.
+    space-between is widely used
+
+    parent is called flexbox and children are called flex items.
+    (widely used: flex-start, center, end, space-between)
+
+    for cross-axis: align-items are used (widely used values are: start, end and center)
+    
+    homework: 
+       for parent: flex-direction, flex-wrap
+       for children: flex-grow, order
+       bootstrap container class 
+
+
+Day 12: 
+    no class
+
+Day 13:
+    overflow: hidden property in flexbox
+    flex-wrap: is used to wrap the flex items in the flexbox
+    by default children are stretched in flexbox
+    when there is multiple row of children, note: we can use align-content(however this property in not really used so much)->flex-wrap works side-by-side
+    how selectors work, what happens when there is space between selectors and what happens otherwise and so on
+    eg: p.child(paragraph tag which contains child class) vs p .child(paragraph inside which child has a class of "child")
+    Look for the unique thing for selection or selector
+
+Day 14:
+    pseudo-class and pseudo-element(it is called element because it adds the new content or element like altogether)
+    css position property:
+        1.static
+        2.relative
+        3.absolute
+        4.fixed
+        5.sticky
+
+    short cut: shift+alt + i, ctrl + left-right to move across the words
+
+Day 15:
+    positioning
+    1.relative (element can be moved relative to it's original position)
+    2.absolute (element moves relative to it's nearest non-static parent)
+    3.fixed is like absolute but remains fixed in it's position(it is relative to hmtl/screen)
+    4.Sticky is like fixed but to make it work we need to tell the element when to stop by adding some properties like top, bottom etc
+    
+    universal selector(*)
+    margin-left and right auto to center the element
+    firefox browser for mobile responsive
+    box-sizing: border-box
+    margin can also be given negative values but not in case of padding
+    overflow: hidden(remember this property for good)
+    fixed doesn't remain under the relative parent
+    absolute remains under the all parent's except from the parent that is static
+    line-height property 
+    iconmonstr for icons
+    appearance: none
+    .container utility class
+
+Day 16:
+    when a flex-item is given position of absolute, it stops to function as a flex-item
+    when we position an element of sticky, it looks for the parent but does not care the position of the parent
+    sticky property also asks for top property
+
+    sans-serif(content)
+    serfif fonts(title)
+    z-index -> is used to compare between siblings and the property is applied
+    different fonts from google fonts
+
+Day 17:
+    media queries
+    zoom in and out feature in firefox ctrl +/-
+    in mobile first approach, your code is less in some sense
+
+
+Day 18:
+    saturday
+
+Day 19:
+    Sir tonsil
+
+Day 20: 
+    Monday
+
+Day 22:
+for .container class values while using tailwind breakpoints
+// convert them to proper css
+min-width:1536px then .container max-width = 1458px
+min-width:1280px then .container max-width = 1216px
+min-width:1024px then .container max-width = 990px
+min-width:768px then .container max-width = 720px
+min-width:640px then .container max-width = 600px
+
+
+.container class in bootstrap
+grid garden
+transform property in css
+transition in css for animations
+css variables
+
+box-shadow & text-shadow property
+
+day 23: 
+    negative margin was used before grid came in css
+    grid-box
+    with fragment unit in grid, horizontal scrolling is avoided then other units
+    repeat function
+    grid track (tracks can be  positive as well as negative)
+    grid-auto-flow
+    grid-row-start grid-row-end etc
+    span 2 span 3
+    grid-row: span 2(widely used)
+    most used grid properties:
+        grid-template-columns,  grid-row, grid-column
+
+day 24:
+    grid revised with grid garden
+    specificity-score in css
+    -> class has higher priority than a tag(id > class > id)
+    0 0 0 (id class tag)
+    used to override css
+    similarly inline css > internal > external(in terms of priority)
+    !important flag
+    a little about animations
+    if you want to have transition while both going and coming back write css in the child itself on hover
+
+
+day 25:
+    jpg - has some background
+    png - has transparent background
+    svg is a vector image, doesn't get blur howmuchever zoom is done
+    alt + shift + r - opens image in its folder
+    typescale.com 
+    hamburger menu-size: 24px, 32px, 48px
+
+day 26:
+    onclick in js 
+    flex-grow
+    back-drop concept
+    brootstrap modal
+    css variables
+    and from tomorrow we start javascript
+    
+day 27:
+    alt + shift + a -> for multiline comment
+    ctrl + / -> for single line comment
+    why is variable used ?
+    ->it is used to reuse the code and make code easy to change the value all at once, create once use again and again
+    auto semi-colon concept in js
+    ctrl + shift + p -> to open vs code setting
+    minimap toggle
+    ctrl + tab > to switch between file in vs code
+day 28:
+    variable overriding
+    code executes line by line from top to bottom
+    variable declaration and initialization concept
+    variable made from "var" keyword can be redeclared however cannot be redeclared only re-initialized
+    var let const
+    2015 - es6 js version
+    new keywords like let and const were brought about
+    const variable name is usually written in uppercase plus SNAKE_CASE
+    always try and error
+    array and indexing in array
+
+day 29:
+    revision
+    donot repeat yourself concept
+    give a meaningful variable name
+    write the array name in plural noun
+    node <js filename> to run in the terminal
+    array should have similar data type
+    adding new element in an array
+    sansari maya bichitra
+
+
+day 30:
+    object and how to create them
+    object doesn't contain index, it contains key-value pair
+    key, attribute or property in object is all the same
+    array of objects
+    accessing the property of the object and making changes
+    ctrl + g  -> to get a search bar for searching line
+
+
+day 31:
+    multidimensional array and object(in other words: nested array and object)
+    whenever we need to add more information, create an object
+    when there are mutiply things, make an array
+    while accessing do it one by one from top to bottom
+    research on function
+
+day 32: 
+    use console.log to format the user interfaces like Bibek did in the group
+    consistency in array and object must be maintained
+    concept of nested object and nested array and mixture of both
+
+day 33: 
+    function
+    string literal or template literal
+    don't use + or , to print, rather use back-tick or string literals
+    /** + enter to write comment about function or functional comment
+    parameters and argument
+    principle of DRY (Donot Repeat Yourself)
+
+day 34:
+    the parameters in a function corresponds to the order in which arguments are passed
+    function are reusable like variables
+
+day 35: 
+    saturday
+
+day 36: 
+    break sagar tmg
+
+day 37: 
+    substring string function -> substring(0, 4) returns the characters of a string from index 0 - 3 excluding 4.
+    concept of object destructuring let {name, age} = person; //for example
+    note that the name of the attribute in the object must match with the name that is declared while destructuring and order doesn't matter
+    concept of helper function(like returning the substring of the original string)
+
+day 38:
+    we can also print a variable wrapping inside the the curly braces or in other words in the form of object (i.e if the key and value is the same)
+
+    //operators
+    assignment operator(=)
+    count = count + 5
+    count += 5//short hand
+
+    pre-increment and post increment:
+    let number = 9;
+    number++ //number is incremeted by 1 but not instantly but later//updates number in the background
+    ++number //number increment by 1 and can access the updated value immediately
+
+    arithmetic operators(+, -, *, /, %)
+    note + is also used to concatenate two strings
+    use of % in design
+
+    comparison operators:
+    equality operator: ==
+    <, >, >=(greater or equals to), <=, !=
+
+    logical operators:
+    !, ||, &&
+
+    conditional statements
+    if, if-else also (nested if-else), if else-if(does the work of nested if-else)  switch statments, ternary operators
+
+day 39:
+    /** */ for functional comments
+    anything can be passed as the parameter in the function from variable, constant to the function itself(and such function is called callback function)
+    concept of if else, nested if else and if else-if
+
+day 40:
+    switch and nested if-else work similarly in terms of application
+
+    codes, written below the return keyword, are unreacheable
+    a problem can have multiple solutions, there may not be the fixed one solution  
+    Note: it is better to have only one return statment rather than many
+    don't forget about break keyword with switch statement
+
+    some tricks: to define a range we use && operator for instance (from 10 to 20, we can write x >= 10 && x <= 20) for defining something beyond the range we can use || operator for instance (x <= 9 || x >= 21);
+    for loop: 
+           for(initialPoint; condition: mutator) {
+            //code
+           }
+day 41:
+    array and loops come together
+    loops:
+        for(initialPoint; condition; mutator) {
+            //codes
+        }
+
+    "node index.js" to run in terminal
+    products api
+    ctrl + l -> to select a line in vs code
+    tip: If you are supposed to create a dynamic thing but you don't exactly know to then start from the core(i.e. static)
+    function is reusable (never forget)
+    note: logical operators are used to evaluate multiple conditions at the same time(this helps us to avoid so many nested if-else conditions and if-else if)
+
+
+day 42:
+    concept of break and return ( use it )
+    return - ends the function 
+    break - ends the loop
+
+    //Or operator demands only 1 condition to be true for the entire expression to be true
+    //And operator demands all the conditions to be true for the entire expression to be true
+    //Not operator inverts the truthness of the expression
+
+    note: if you are using boolean expression, you don't need to compare it with 'true'
+
+    ... rest operator (in function parameter) collects remaining values of arguments in the form of array(incase there isn't parameter to collect arguments in the function)
+
+    //arrow function
+
+    day 43:
+        note: variables cannot be used before declaration, and same with the arrow function
+        //however traditional functions
+        can be called before definition (and this feature is called hoisting)
+
+        //push method in an array
+        array.push(<element>) to add new element at the last position of an array
+        [].push() method in array
+        //changes the original array
+
+        note: not including let, var or const before a variable makes that variable of global scope
+    
+    day 44: 
+        While git cloning, you cannot clone the folder inside of the main folder or git repo, it has to be the url of the main folder or git repo
+        note: we can work with arrow function withou return key word also in other words return keyword can be skipped
+        .toLowerCase() method in string
+        .toUpperCase() 
+        .slice(startIndex, endIndex) returns the slice excluding the element of the endIndex. Also this function donot modify the string or array
+    
+    day 45: 
+        some practice and different ways to solve the problem of find country code
+        setTimeout function -> setTimeout(showPopup, 2000) //2000ms means 2s
+        here the function isn't called only the "name" of the function is mentioned or passed
+        or else if called the return value is received which doesn't lead to our desired result
+        
+        a function passed as an argument to another function is called callback function
+        //function with no name is called anonymous function
+        
+        //Here setTimeout is also an asynchronous function
+
+        el means element (we use it alot), idx for index
+
+        //forEach
+        in forEach callback function, first parameter is element, second is index
+        Note: Keywords like return and break don't work in forEach Function
+        forEach is applicable only for array as it one of the methods of forEach
+
+        //map 
+        returns the array by modifying the each element of array (note: the length of new array is always equal to the original array), it doesn't modify the original array either
+
+        //filter
+        returns the array of elements which satisfies the provided condition, (the lenght of new array is always less than or equal to the original array)
+
+        //find
+        returns a (first) single element(returns the object if it is an array of objects) that satisfies the given condition or matches with the target element. Stops iteration as soon as the first element satisfies the condition incase there are multiple elements that satisfies the condition. if no element satisfies the condition the find method returns 'undefined'
+
+        note: when curly braces is used with arrow function we explicitly need to mention the "return keyword" however for a single statment no curly braces is required as well as it autmatically returns
+
+        ternary operator => condition ? if true: if false;
+
+    day 46: 
+        todos.forEach((todo) => {}) //read as todos dot forEach todo
+        //map
+
+        //learn about reduce -> reduce method reduces the values of an array into a single value and return the final value after all iteration is completed
+        .reduce(callback, initialValueOfAccumulator)
+        .reduce((accumulator, currentValue, currentIndex, array)=>{})
+        eg: can be used to calculate the sum of the array, the reduce method
+
+        //currentValue means the current element
+    
+    day 47:
+        ctrl + r -> to tab between different folders(very powerful)
+        press alt key to open in a new vs code(for files only)
+        ctrl + p -> to tab between different files in the current folder (very powerful)
+
+
+        //falsy values in js
+        false, null, undefined, 0, NaN(eg: "hello" - "world"), empty string ("" note: no space in between) - six of them
+        everything else that these is a true value
+
+        //incase of arrow function//to make code short
+        if there is only one parameter, we needn't use parenthesis
+        if there is only one statement you needn't write curly braces and return keyword
+
+        //map is very important in react
+
+        => forward arrow is always with the function
+
+
+        //asynchronous programming
+
+        promise, then, catch, finally, async await
+
+        //exception handling
+        try and catch
+        try {
+            //code that it prone to error
+        }catch(err) {
+            console.log(err);
+        } //this helps to run the other code before it even if the above code is errorful 
+
+        api -> url that helps us link backend and frontend for data
+
+        //by the way we needed write promise code ourselves 
+
+
+        REAL GAME OF STRING LITERAL WITH CHATGPT
+        [object object] is the string representation of object 
+
+    day 48:
+        dom manipulation: changing html and css using js
+        always wrap the input field with form tag
+        document is window object
+
+        innerHTML takes string, innerHTML = "<li>react</li> <li>node</li>"
+        shift + enter -> takes to the new line
+        use backtick for multiple for adding variable and expresions
+        kebab case in html and css
+        required in input field
+        
+        task is to delete li
+            tips: might need to make a function
+
+
+    day 49:
+       filter method to delete the element of the given index, not only splice can be used
+
+       research: local storage in browser
+                 remove the the text from the input field once the form is submitted
+                 create a table containing: fruit-name and quantity
+
+    mongodb atlas for api
+
+    postman: api testing tool
+
+    md: mark down file just like a text file
+    crud operations in database
+        -create
+        -read
+        -update
+        -delete
+
+    request methods
+        - GET - data read
+        - POST - data create
+        - PUT - data update
+        - DELETE - delete data
+
+    STATUS CODES
+        - 200 line means success
+        - 300 redirect 
+        - 400 client side error - frontend side error
+        - 500 backend/server side error
+
+
+    required field in form to make the user must write something beform submission
+
+    day 50: 
+        dynamic table in UI/UX
+        axios api package for api call
+        axios.get - to read data
+        axios.post - to create data
+        .then, .catch > for error
+
+    day 51:
+        changing themes light and dark
+        adding and removing class using classList
+        -> classList.add('<classname>') => to add new css class
+        -> classList.remove('<classname>') => to remove existing css class
+        -> classList.toggle('<classname>') => to add if absence and vice versa
+        api call
+        revised: get, post, put, del
+
+        tip: test in a separate file whenever you want something to understand
+        tomorrow, we will learn about node and api creation in later days
+
+    day 52: 
+        event.preventDefault() is used only while submitting forms
+        dummy data from fake json website
+        console.log(response.data.<arrayname>) array-name is based on the api
+        axios is a asynchronous function that returns promise
+    
+    day 53: 
+        express
+        global object eg: console, __filename, __dirname, require
+        node -v or node --version => to check node version
+        node and browser has different environment
+        __filename, __dirname
+        node modules:
+            - third party modules/library
+                eg:- axios, nodemon, bcrypt etc
+            - core modules
+                eg:- module.exports, http module
+            - local modules [do some research]
+                - common js modules (used in express)
+                - Es modules (used in react)
+        concept of data breach i.e data leak
+
+
+        npm -> node package manager
+        node module -> bcrypt for encrypting password
+
+        npm i <third-party-modulename> to install in the system
+
+
+        once again if key and value are same, we don't need to write the both i.e {
+            "username": username,
+            or 
+            username only
+        }
+
+        package.json contains our project information
+        package-lock.json contains information about the package that we have been using
+
+        if you don't have any package.json then you can write (npm init) to add package.json
+
+        setting environment variables in windows for accessing directly from command prompt
+
+        for live reload in node -> install nodemon
+        write: npm install -g nodemon -> for global access
+
+        nodemon <filename> -> to run the file
+    
+    day 54: 
+        npm i bcrypt
+        npm uninstall bcrypt
+        npm i -g nodemon
+        how does require work ?
+        
+        - third party modules
+        - core module (internally available in node)
+        eg:
+            const path = require('path');
+            console.log(path.join(__dirname), "uploads");
+
+            http module is tedious to work with as we need to write alot of if else 
+        Note: we normally host frontend in 3000 and backend in 8000
+        
+
+    day 55:
+        import/exports in nodejs
+        module.exports to export a single data
+        There is only one main file in here
+
+        There are two types of exports: 
+            i. default exports
+             eg: module.exports = fetchProducts
+             only one module.exports can be used
+             if we want to export multiple things then we need to make and object export
+            
+        
+        //express
+        npm i express
+        nodemon by default picks index.js
+        api created
+        app.get
+
+        //tomorrow
+        we will be learning about post request and middleware
+
+    day 56:
+        listen method keeps listening to the mentioned portion
+        express console and browser console is different
+        browser console is only for frontend
+
+        we create document using postman
+
+        //status code
+        400 - bad request
+        401 - unauthorized access - not logged in 
+        404 - resource not found
+
+        res.status(401).send({
+            message: 'unauthorized'
+        });
+
+        res.send() is a function that shows whatever is passed to the frontend
+
+        note: we can only send only one response to the frontend from backend
+
+        //minimap
+        ctrl + shift + p & minimap
+
+
+        //middleware 
+        it is any function which has access to request and response
+        -> the run before everything else
+        next in middleware points to the next valid middleware (here valid keyword is very important)
+        callback inside app.get is also a middleware precisely a action middleware
+
+        tomorrow we will learn about how to wrap a particular request inside a middleware
+    
+    day 57:
+        middleware, creating middleware to specific route only
+        also known as route level middleware
+        public route -. route that doesn't require login
+        protected route - route that requires login
+        while importing the local module, you may or maynot add .js extension while importing or require
+
+        400 => bad data sent by client sometimes it is also 422
+
+        note: req.body can be accessed by any middleware once express.json() middleware if globally declared
+
+    day 58:
+        title.trim() -> this function trims the left and right space and returns a new string
+
+        common error: cannot read properties of undefined or null etc
+
+        //optional chaining
+        person.address?.street -> access the value if exists else don't
+        todos.some() method
+
+        slug in url
+
+        postman documentation and publish
+        add dynamic id while posting
+    
+    day 59:
+        introduction to database
+        relational database, normalization
+        relationships: one to one, many to one, many to many
+        data integrity, data duplication concept
+
+        download: mongodb compass and mongodb shell
+    day 60:
+        crud operation in core mongodb
+
+    day 61: 
+        mongodb setup using mongoose third party module
+        creation of schema and model
+        note: when creating a model, make the first letter Uppercase
+        methods are present in models and not in schemas
+        error handling while doing post request
+        error handling is superbly important
+
+    day 62: 
+        async and await keywords to make asynchronous code behave like synchronous
+
+        async is used infront of the function and await inside of it
+        await cannot be used inside of the normal function, it has to an asynchronous one
+
+        async, await makes code cleaner
+
+        callback hell takes place with .then .catch
+
+        git graph extension installation
+
+        try catch block to handle errors in async await
+
+        error.message error.stack error.name etc
+
+        findByIdAndUpdate returns the old data at first request. So, to return the new updated data we have to pass {new: true} as parameter
+
+        model folder for database files
+
+        -> global error handling middleware with 4 parameter, to make it work we have to use next() in our app.get, app.post etc and pass error inside it like next(error);
+        -> this middleware is created at last before app.listen
+
+    day 63:
+        node is single threaded and if it crashed everything else crash
+        client side and server side error handling us if else statements inside global error handling middleware to make things dynamic
+
+        There are three types of validation:
+        i. client level validation
+        ii. server level validation
+        iii. database level validation
+
+        runValidator: true to check for database validation while updating
+    
+    day 64:
+        error debugging by doing console.log()
+        concept of primary and foreign key in mongodb
+        embedded document and reference document in mongodb
+        Note: If document needs to be changed then do reference else do reference 
+
+    day 65:
+        api are usually in plural forms
+        .populate("author") method in reference document  
+        author is a name of field that you want to populate  
+        ecommerce-api started 
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    
+
+
+        
+
+           
+
+
+
+    
+
+
+
+
+
+
+ 

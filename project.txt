@@ -1,0 +1,5 @@
+steps for setting project:
+1. npm init -> for package.json file
+2. npm i express -> to install express
+3. .gitignore -> /node_modules -> to ignore this file from tracking
+4. setting the server
