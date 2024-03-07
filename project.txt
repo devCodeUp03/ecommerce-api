@@ -3,3 +3,6 @@ steps for setting project:
 2. npm i express -> to install express
 3. .gitignore -> /node_modules -> to ignore this file from tracking
 4. setting the server
+5. setting up mongoose
+
+note: we don't track /node_modules because we can simply get all the files by writing command "npm install"

@@ -643,7 +643,7 @@ day 42:
             i. default exports
              eg: module.exports = fetchProducts
              only one module.exports can be used
-             if we want to export multiple things then we need to make and object export
+             if we want to export multiple things then we need to make an object export
             
         
         //express
@@ -656,7 +656,7 @@ day 42:
         we will be learning about post request and middleware
 
     day 56:
-        listen method keeps listening to the mentioned portion
+        listen method keeps listening to the mentioned port
         express console and browser console is different
         browser console is only for frontend
 
@@ -664,7 +664,7 @@ day 42:
 
         //status code
         400 - bad request
-        401 - unauthorized access - not logged in 
+        401 - unauthenticated access - not logged in 
         404 - resource not found
 
         res.status(401).send({
@@ -690,7 +690,7 @@ day 42:
     day 57:
         middleware, creating middleware to specific route only
         also known as route level middleware
-        public route -. route that doesn't require login
+        public route - route that doesn't require login
         protected route - route that requires login
         while importing the local module, you may or maynot add .js extension while importing or require
 
@@ -719,6 +719,7 @@ day 42:
         data integrity, data duplication concept
 
         download: mongodb compass and mongodb shell
+
     day 60:
         crud operation in core mongodb
 
@@ -754,7 +755,7 @@ day 42:
         -> this middleware is created at last before app.listen
 
     day 63:
-        node is single threaded and if it crashed everything else crash
+        node is single threaded and if it crash everything else crashes
         client side and server side error handling us if else statements inside global error handling middleware to make things dynamic
 
         There are three types of validation:
@@ -768,13 +769,95 @@ day 42:
         error debugging by doing console.log()
         concept of primary and foreign key in mongodb
         embedded document and reference document in mongodb
-        Note: If document needs to be changed then do reference else do reference 
+        Note: If document needs to be changed then do reference else do embedded 
 
     day 65:
         api are usually in plural forms
         .populate("author") method in reference document  
         author is a name of field that you want to populate  
         ecommerce-api started 
+        concept of .gitignore
+        named exports vs default export
+        - default export -> single export of function, variable and so on, any name can be given while importing
+        - named export -> multipl export, has to be the same name while importing
+     files and folders configuration   
+     file name folder names should all be lowercase except the name of the files in model folder
+    
+    day 66:
+        shortcut: ctrl + click -> takes you to the file where it's defination is written
+        routing part in route folder
+        routing logic part in controller
+        err.stack to see the exact position from where error is coming
+        npm i joi -> for validation package
+        debugging with console.log()
+
+    day 67:
+        regular expressions in regex.com
+        password regex to add to joi validation
+        password is one way encryption i.e. the encrypted password cannot be converted into the original
+
+        difference between json and js object:
+        in json we can't store function, undefined unlike js object hence cannot be sent
+
+        wireshark website look up
+        when data is sent using post request the data cannot be known with https
+
+        json web token npm
+        session is domain specific and so on
+        token is widely popular
+
+    day 68:
+        default and custom validation in mongodb schema
+        protected route -> route with some authentication middleware
+        error: payload to be a plain object means we need to convert into object using .toObject() method
+        jwt.io
+        optional chaining
+        req.headers
+        once again the vital concept of middleware:
+        middleware is the function having access to req and response hence they can modify req and res if needed
+
+    day 69: 
+        authentication vs authorization 
+        eg: authentication means login, authorization means login + correct role
+        excalidraw.com for drawing
+        signature in jwt, 401 -> unauthenticated
+        google signin form takes alot of setup 
+
+        stateful -> cookie, session
+        stateless -> jsonwebtoken
+        Object.entries(object) -> convert object into array 
+        enum: ['buyer', 'seller'] -> the value of role can be either buyer or seller only in mongodb schema
+    
+    day 70: 
+        custom validation in schema using validate and validator
+        mongoose document for it's own functions, data types etc and so on, it is vast has it's own library
+        creating variable in postman to save and use token {{<variableName>}}, also domain name and so on all can be stored in variable
+        setting token in header using api key so that we don't need to pass the token in the header again and again
+        403 - authorization error status code
+        .net and larevel is mostly used in nepal
+
+    day 71: 
+        express file uploads and validation based on size and type
+        base 64 conversion of image
+        cloudinary to host images -. it has npm service too
+        npm i express-fileupload, we need this package inorder to read form data
+        image is found in req.files not req.body
+        path module, path.resolve() -> points to the root folder, path.join() -> joins path
+        serve static files in express
+        query parameter -> req.query.<queryName>
+        This is build in js contructor function: new RegEx('', 'i') i -> means case insensitive
+
+        cannot read the property of undefined image -> this type of problem is solved by optional chaining
+
+        can add timestamp to the image path inorder to avoid overriding when the image of same is uploaded multiple times
+
+        next day: product filter concept
+        mongodb aggregation: advanced mongodb find
+        sort, pagination
+        hosting
+
+
+
 
 
 
