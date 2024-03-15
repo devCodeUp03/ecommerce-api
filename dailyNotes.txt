@@ -838,23 +838,57 @@ day 42:
 
     day 71: 
         express file uploads and validation based on size and type
-        base 64 conversion of image
-        cloudinary to host images -. it has npm service too
+        base 64 conversion of image //but this method of storing image in the database is not so efficient
+        cloudinary to host images -> it has npm service too
         npm i express-fileupload, we need this package inorder to read form data
         image is found in req.files not req.body
         path module, path.resolve() -> points to the root folder, path.join() -> joins path
         serve static files in express
         query parameter -> req.query.<queryName>
-        This is build in js contructor function: new RegEx('', 'i') i -> means case insensitive
+        This is built in js contructor function: new RegEx('', 'i') i -> means case insensitive
 
         cannot read the property of undefined image -> this type of problem is solved by optional chaining
 
-        can add timestamp to the image path inorder to avoid overriding when the image of same is uploaded multiple times
+        can add timestamp to the image path inorder to avoid overriding when the image of same is uploaded multiple times(the idea is to make the name of the image different when stored in the server)
 
         next day: product filter concept
         mongodb aggregation: advanced mongodb find
         sort, pagination
         hosting
+    
+    day 72:
+        previous revision
+        epoch time -> Date.now() this is time in millisecond
+        Math.floor(), Math.ceil(), Math.random()
+        escape character -> \n, \t, \\
+        replaceAll() -> very useful function in string
+        in joi, image is in bytes
+        enum in joi validation
+        we can create all server side validation using joi validation; just do more research
+        fs module in js to delete image from the server once the document of given id is deleted
+        fs.writeFileSync()-> to create file
+        fs.unlinkSync () -> to delete file
+
+        express-upload can be used to compress file as well
+
+        Previous revision epoch time -> Date.now() this is time in milliseconds
+    
+    day 73:
+        order placing
+        api endpoints are always in plural form
+        embedded and reference document once again
+        "select: false" field in User model to hide password while doing find but since in login we require password we can do .select('+password');
+        .populate() method in find
+        mvc architecture
+        timestamps: true in model to keep track of time
+        next day : we will learn about searching by range 
+        concept of Promise.all in order setup
+
+
+
+
+
+
 
 
 

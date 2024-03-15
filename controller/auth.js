@@ -72,8 +72,10 @@ const loginUser = async (req, res, next) => {
     }
     let user = await User.findOne(
       { email: req.body.email }
-    );
+    ).select('+password');
+    //.select('+password')
     let status = await bcrypt.compare(req.body.password, user.password);
+    console.log({status});
     user.password = undefined
     if (status) {
       user = user.toObject();
@@ -85,7 +87,7 @@ const loginUser = async (req, res, next) => {
       res.send("Invalid Credentials");
     }
   } catch (err) {
-    res.send(err);
+    next(err);
   }
 };
 
