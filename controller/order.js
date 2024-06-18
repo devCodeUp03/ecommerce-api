@@ -1,6 +1,6 @@
 const Joi = require("joi");
 const Order = require("../model/Order");
-const Product = require("../model/Product")
+const Product = require("../model/Product");
 const jwt = require("jsonwebtoken");
 
 const storeOrderValidation = Joi.object({
@@ -15,8 +15,9 @@ const storeOrderValidation = Joi.object({
 
 const showOrder = async (req, res) => {
   let order = await Order.find({});
+  console.log(order);
   res.send(order);
-}
+};
 
 const createOrder = async (req, res, next) => {
   try {
@@ -36,15 +37,16 @@ const createOrder = async (req, res, next) => {
     });
     return res.send({ errors });
   }
+
   try {
     let products = [];
     products = await req.body.products.map(async (el) => {
-      let product = await Product.findOne({_id: el._id});
+      let product = await Product.findOne({ _id: el._id });
       // console.log(product);
-      if(!product) {
-        let error = new Error;
+      if (!product) {
+        let error = new Error();
         error.statusCode = 404;
-        error.message = 'no product found';
+        error.message = "no product found";
         throw next(error);
       }
       let order = {
@@ -58,7 +60,7 @@ const createOrder = async (req, res, next) => {
     products = await Promise.all(products);
 
     let order = await Order.create({ products });
-    console.log(order)
+    console.log(order);
     res.send(order);
   } catch (err) {
     next(err);
@@ -67,5 +69,5 @@ const createOrder = async (req, res, next) => {
 
 module.exports = {
   createOrder,
-  showOrder
+  showOrder,
 };

@@ -35,7 +35,7 @@ Day 4:
 
 Day 5:
     There are three ways you can add css:
-        a. inline css(using style attribute)
+        a. inline css(using style attribute) 
         b. internal css(using style tag)
         c. external css(using css file and linking with the html file)
         alt stands for alternative text
@@ -69,7 +69,7 @@ Day 6:
     css overriding concepts 
 
 Day 7:
-    External css to employ the principle of DRY(Do Not Repeat)
+    External css to employ the principle of DRY(Do Not Repeat Yourself)
     External css can be used multiple times as it can be reused simple by linking to the given page
     if there is a common design across multiple files/pages external css is used
     and internal css for unique design within the page
@@ -85,7 +85,7 @@ Day 7:
     :root selector to select the highest level parent i.e html here you can change the font-size of the root
     box-sizing: border-box includes padding and border in the specified height and width of the element
     while the default value of box-sizing is 'content-box' in which the height and width applied is only applicable to the content excluding padding and border
-    short-cuts: ctrl + shift + c to open inspect
+    short-cuts: ctrl + shift + c to open inspect, ctrl + shift + i to open network and ctrl + shift + j to open console
             similarly ctrl + shift + j to close inspect, this same short cut also directly opens console
 
 Day 8:
